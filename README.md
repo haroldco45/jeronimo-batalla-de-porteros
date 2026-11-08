@@ -2,7 +2,7 @@
 
 App recuerdo (PWA) de Jerónimo, ganador de la ronda clasificatoria de la Batalla de Porteros 2026 de la Academia de Porteros JuanP, en Caucasia, Antioquia.
 
-**Netlify:** https://jeronimo-batalla-de-porteros.netlify.app/
+**Netlify:** https://batalla-de-porteros.netlify.app/
 **Repo:** haroldco45/jeronimo-batalla-de-porteros
 
 ## Qué tiene
@@ -32,7 +32,7 @@ video/ (jeronimo-ronda-clasificatoria.mp4, atajada-camara-lenta-1.mp4, atajada-c
 ## Publicar
 1. Crear el repo `jeronimo-batalla-de-porteros` en GitHub (haroldco45) y subir todo respetando las carpetas `img/` y `video/`.
 2. En Netlify: Add new site → Import from GitHub → elegir el repo → nombre del sitio `jeronimo-batalla-de-porteros`.
-3. Si Netlify da otro nombre, cambiar la URL en `index.html` (etiquetas og/twitter y la constante `URL_APP`).
+3. Si se cambia el nombre del sitio, cambiar la URL en `index.html` (etiquetas og/twitter y la constante `URL_APP`).
 
 La página lleva `noindex` para que no aparezca en Google: es un recuerdo de un niño y se comparte solo por enlace.
 
