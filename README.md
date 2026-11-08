@@ -11,7 +11,7 @@ App recuerdo (PWA) de Jerónimo, ganador de la ronda clasificatoria de la Batall
 - Video completo con sonido y dos atajadas en cámara lenta
 - Galería de atajadas con visor a pantalla completa
 - El cuadro del torneo con brillo e inclinación al tocarlo
-- Foto con su papá Luis y enlace a la app de su hermano Benjamín
+- Foto de su hermano Benjamín con su papá Luis y enlace a la app de Benjamín
 - Carta "para leer cuando seas grande"
 - Mensajes de felicitación (se guardan en el celular y se envían por WhatsApp a Luis, el papá de Jerónimo)
 - Botón para felicitar a Luis directamente por WhatsApp

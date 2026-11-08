@@ -1,9 +1,9 @@
 // Service worker — Jerónimo · Batalla de Porteros 2026 (Vibras Positivas HM)
-const CACHE = 'jeronimo-v3';
+const CACHE = 'jeronimo-v4';
 const SHELL = [
   './', 'index.html', 'manifest.json',
   'img/icon-192.png', 'img/icon-512.png', 'img/apple-touch-icon.png',
-  'img/cuadro-batalla-de-porteros.jpg', 'img/jeronimo-y-luis.jpg', 'img/poster-video.jpg',
+  'img/cuadro-batalla-de-porteros.jpg', 'img/benjamin-y-luis.jpg', 'img/poster-video.jpg',
   'img/poster-lenta-1.jpg', 'img/poster-lenta-2.jpg',
   'img/atajada-14-2.jpg', 'img/atajada-1-8.jpg', 'img/atajada-19-3.jpg', 'img/atajada-13-8.jpg',
   'fonts/barlow-latin-400-normal.woff2', 'fonts/barlow-latin-500-normal.woff2', 'fonts/barlow-latin-600-normal.woff2', 'fonts/barlow-latin-700-normal.woff2',
