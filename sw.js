@@ -1,5 +1,5 @@
 // Service worker — Jerónimo · Batalla de Porteros 2026 (Vibras Positivas HM)
-const CACHE = 'jeronimo-v1';
+const CACHE = 'jeronimo-v2';
 const SHELL = [
   './', 'index.html', 'manifest.json',
   'img/icon-192.png', 'img/icon-512.png', 'img/apple-touch-icon.png',
