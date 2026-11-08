@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jerónimo · Batalla de Porteros 2026 · Caucasia</title>
+<meta name="description" content="El recuerdo de Jerónimo, ganador de la ronda clasificatoria de la Batalla de Porteros 2026 en Caucasia. Video, cámara lenta, atajadas y el cuadro del torneo.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b0b0c">
+
+<!-- Vista previa del enlace (WhatsApp, Facebook, X) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jeronimo-batalla-de-porteros.netlify.app/">
+<meta property="og:title" content="Jerónimo · Ganador de la ronda clasificatoria">
+<meta property="og:description" content="Batalla de Porteros 2026 · Caucasia. Mira sus atajadas, el video en cámara lenta y déjale un mensaje.">
+<meta property="og:image" content="https://jeronimo-batalla-de-porteros.netlify.app/img/og-jeronimo.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jerónimo · Ganador de la ronda clasificatoria">
+<meta name="twitter:description" content="Batalla de Porteros 2026 · Caucasia. Mira sus atajadas, el video en cámara lenta y déjale un mensaje.">
+<meta name="twitter:image" content="https://jeronimo-batalla-de-porteros.netlify.app/img/og-jeronimo.jpg">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/barlow-condensed-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Barlow;font-weight:400;font-style:normal;font-display:swap;src:url(fonts/barlow-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:Barlow;font-weight:500;font-style:normal;font-display:swap;src:url(fonts/barlow-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:Barlow;font-weight:600;font-style:normal;font-display:swap;src:url(fonts/barlow-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:Barlow;font-weight:700;font-style:normal;font-display:swap;src:url(fonts/barlow-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-weight:600;font-style:normal;font-display:swap;src:url(fonts/barlow-condensed-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-weight:800;font-style:normal;font-display:swap;src:url(fonts/barlow-condensed-latin-800-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-weight:900;font-style:normal;font-display:swap;src:url(fonts/barlow-condensed-latin-900-normal.woff2) format('woff2')}
+@font-face{font-family:'Barlow Condensed';font-weight:800;font-style:italic;font-display:swap;src:url(fonts/barlow-condensed-latin-800-italic.woff2) format('woff2')}
+:root{
+  --bg:#0b0b0c; --bg2:#141416; --line:#26262a; --text:#f4f2ee; --muted:#a8a6a0;
+  --gold:#f2be46; --gold2:#ffdd8a; --turf:#b7f23a; --red:#e2343f;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Barlow,system-ui,sans-serif;line-height:1.5;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:min(1100px,100% - 2.5rem);margin-inline:auto}
+.cond{font-family:"Barlow Condensed",Barlow,sans-serif;text-transform:uppercase;letter-spacing:.02em}
+
+/* Barra superior */
+.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:.7rem 1.1rem;padding-top:max(.7rem,env(safe-area-inset-top));transition:background .3s,backdrop-filter .3s}
+.top.solid{background:rgba(11,11,12,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.brand{font-family:"Barlow Condensed";font-weight:800;font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase}
+.brand b{color:var(--gold)}
+.top-actions{display:flex;gap:.5rem}
+.chip{border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);color:var(--text);font:600 .8rem Barlow;padding:.45rem .8rem;border-radius:999px;cursor:pointer;letter-spacing:.04em}
+.chip:hover{border-color:var(--gold);color:var(--gold)}
+.chip[hidden]{display:none}
+
+/* Portada */
+.hero{position:relative;min-height:100svh;display:grid;align-items:end;overflow:hidden;isolation:isolate}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:38% 50%;z-index:-2;transform:scale(1.08);animation:drift 18s ease-in-out infinite alternate}
+@keyframes drift{to{transform:scale(1.18) translate(-2%,-1%)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(120% 70% at 50% 110%,rgba(242,190,70,.28),transparent 60%),
+  linear-gradient(180deg,rgba(11,11,12,.55) 0%,rgba(11,11,12,.25) 35%,rgba(11,11,12,.92) 82%,var(--bg) 100%)}
+.beams{position:absolute;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.beams span{position:absolute;top:-20%;width:18vw;min-width:120px;height:140%;background:linear-gradient(180deg,rgba(255,221,138,.32),transparent 70%);filter:blur(8px);transform-origin:top center;animation:sweep 7s ease-in-out infinite alternate;mix-blend-mode:screen}
+.beams span:nth-child(1){left:6%;transform:rotate(18deg)}
+.beams span:nth-child(2){right:6%;transform:rotate(-18deg);animation-delay:-3.5s}
+@keyframes sweep{0%{opacity:.25}50%{opacity:.75}100%{opacity:.35;rotate:-8deg}}
+.hero-in{padding:7rem 0 3.5rem}
+.kicker{display:inline-flex;align-items:center;gap:.6rem;font:700 .82rem Barlow;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.kicker::before{content:"";width:34px;height:2px;background:var(--gold)}
+.name{font-family:"Barlow Condensed";font-weight:900;font-size:clamp(4.2rem,17vw,11rem);line-height:.86;letter-spacing:-.01em;text-transform:uppercase;margin:.6rem 0 .4rem;color:#fff;filter:drop-shadow(0 8px 30px rgba(0,0,0,.6))}
+.name .l{display:inline-block;background:linear-gradient(180deg,#fff 30%,var(--gold2) 75%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;opacity:0;transform:translateY(40px) rotate(4deg);animation:up .7s cubic-bezier(.2,.9,.25,1.2) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.title{font-family:"Barlow Condensed";font-weight:800;font-size:clamp(1.5rem,5vw,2.6rem);text-transform:uppercase;line-height:1.05}
+.title em{font-style:normal;color:var(--turf)}
+.lead{max-width:36rem;color:#d9d6cf;margin-top:.9rem;font-size:1.05rem}
+.ctas{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.6rem}
+.btn{appearance:none;border:0;cursor:pointer;font:700 .95rem Barlow;letter-spacing:.06em;text-transform:uppercase;padding:.95rem 1.4rem;border-radius:12px;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:transform .15s, box-shadow .2s}
+.btn:active{transform:scale(.97)}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1a1305;box-shadow:0 10px 30px -10px rgba(242,190,70,.7)}
+.btn-ghost{background:rgba(255,255,255,.08);color:var(--text);border:1px solid rgba(255,255,255,.2)}
+.btn-wa{background:#1fa855;color:#fff}
+
+/* Cinta en movimiento */
+.ticker{border-block:1px solid var(--line);background:#0f0f10;overflow:hidden;white-space:nowrap}
+.ticker div{display:inline-block;padding:.85rem 0;animation:tick 28s linear infinite;font-family:"Barlow Condensed";font-weight:800;font-size:1.25rem;text-transform:uppercase;letter-spacing:.05em}
+.ticker span{margin:0 1.4rem;color:var(--muted)}
+.ticker span.g{color:var(--gold)}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+section{padding:4.5rem 0}
+.sec-h{display:flex;align-items:end;justify-content:space-between;gap:1rem;margin-bottom:1.6rem;flex-wrap:wrap}
+.sec-h h2{font-family:"Barlow Condensed";font-weight:900;font-size:clamp(2.2rem,7vw,3.6rem);line-height:.95;text-transform:uppercase}
+.sec-h h2 small{display:block;font:700 .8rem Barlow;letter-spacing:.18em;color:var(--gold);margin-bottom:.4rem}
+.sec-h p{color:var(--muted);max-width:28rem}
+
+/* Ficha */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem}
+.stat{background:linear-gradient(160deg,#1a1a1d,#111113);border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.1rem 1rem;position:relative;overflow:hidden}
+.stat::after{content:"";position:absolute;inset:auto -30% -60% auto;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(242,190,70,.18),transparent 70%)}
+.stat .k{font:700 .72rem Barlow;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.stat .v{font-family:"Barlow Condensed";font-weight:800;font-size:clamp(1.25rem,5vw,1.65rem);overflow-wrap:break-word;line-height:1.05;text-transform:uppercase;margin-top:.35rem}
+.stat.win{border-color:rgba(242,190,70,.55);background:linear-gradient(160deg,#2a210c,#141108)}
+.stat.win .v{color:var(--gold2)}
+
+/* Video */
+.player{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#000;box-shadow:0 30px 80px -30px rgba(0,0,0,.9)}
+.player video{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.badge{position:absolute;top:.8rem;left:.8rem;z-index:2;font:800 .72rem Barlow;letter-spacing:.14em;text-transform:uppercase;background:var(--red);color:#fff;padding:.35rem .6rem;border-radius:6px}
+.slow{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-top:1rem}
+.slow .player video{aspect-ratio:1280/586}
+.slow .badge{background:var(--gold);color:#1a1305}
+.cap{padding:.8rem 1rem;background:#111113;border-top:1px solid var(--line);font-weight:600}
+.cap span{color:var(--muted);font-weight:400}
+
+/* Galería */
+.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:.7rem}
+.gal figure{position:relative;overflow:hidden;border-radius:16px;cursor:zoom-in;background:#111;border:1px solid var(--line)}
+.gal figure:first-child{grid-column:1/-1}
+.gal img{width:100%;height:100%;aspect-ratio:1440/660;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.gal figure:hover img{transform:scale(1.07)}
+.gal figcaption{position:absolute;inset:auto 0 0;padding:1.6rem .9rem .7rem;background:linear-gradient(transparent,rgba(0,0,0,.85));font-family:"Barlow Condensed";font-weight:800;text-transform:uppercase;font-size:1.05rem;letter-spacing:.03em}
+.gal figcaption span{color:var(--gold)}
+
+/* Cuadro */
+.trophy{display:grid;grid-template-columns:1fr;gap:2rem;align-items:center}
+@media(min-width:820px){.trophy{grid-template-columns:.9fr 1.1fr}}
+.frame{perspective:1000px;justify-self:center;width:min(420px,100%)}
+.frame-in{position:relative;border-radius:10px;overflow:hidden;transform:rotateY(-8deg) rotateX(4deg);transition:transform .25s ease-out;box-shadow:0 40px 80px -25px rgba(242,190,70,.45),0 20px 40px -20px #000}
+.frame-in img{width:100%}
+.frame-in::after{content:"";position:absolute;inset:-50%;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.28) 50%,transparent 60%);animation:shine 4.5s ease-in-out infinite}
+@keyframes shine{0%{transform:translateX(-60%)}60%,100%{transform:translateX(60%)}}
+.quote{font-family:"Barlow Condensed";font-weight:800;font-size:clamp(1.8rem,5.5vw,2.8rem);line-height:1.05;text-transform:uppercase}
+.quote b{color:var(--gold)}
+.trophy p{color:#d4d1ca;margin-top:1rem}
+
+/* Carta */
+.letter{background:linear-gradient(160deg,#18170f,#0f0f10);border:1px solid rgba(242,190,70,.3);border-radius:22px;padding:clamp(1.4rem,4vw,2.6rem);position:relative;overflow:hidden}
+.letter::before{content:"";position:absolute;inset:0;background:url(img/atajada-19-3.jpg) center/cover;opacity:.09;filter:grayscale(.3)}
+.letter > *{position:relative}
+.letter h3{font-family:"Barlow Condensed";font-weight:900;font-size:clamp(2rem,6vw,3rem);text-transform:uppercase;line-height:1}
+.letter p{margin-top:1rem;font-size:1.1rem;color:#e6e2d9;max-width:44rem}
+.letter .sign{margin-top:1.4rem;font-family:"Barlow Condensed";font-weight:800;font-style:italic;font-size:1.4rem;color:var(--gold)}
+
+/* Mensajes */
+.form{display:grid;gap:.7rem;background:#111113;border:1px solid var(--line);border-radius:18px;padding:1.2rem}
+.form input,.form textarea{width:100%;background:#0b0b0c;border:1px solid #2e2e33;color:var(--text);font:500 1rem Barlow;padding:.85rem 1rem;border-radius:12px;outline:none}
+.form input:focus,.form textarea:focus{border-color:var(--gold)}
+.form textarea{min-height:110px;resize:vertical}
+.form .row{display:flex;flex-wrap:wrap;gap:.6rem}
+.note{font-size:.82rem;color:var(--muted)}
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:.8rem;margin-top:1.2rem}
+.msg{background:#151517;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:12px;padding:1rem;animation:pop .45s ease}
+@keyframes pop{from{opacity:0;transform:translateY(12px) scale(.98)}}
+.msg p{color:#e8e5de}
+.msg .who{margin-top:.6rem;font:700 .82rem Barlow;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+.msg .del{float:right;background:none;border:0;color:var(--muted);cursor:pointer;font:600 .75rem Barlow}
+
+/* Compartir */
+.share{text-align:center;padding:4rem 0 3rem;background:radial-gradient(80% 90% at 50% 100%,rgba(242,190,70,.16),transparent 70%)}
+.share h2{font-family:"Barlow Condensed";font-weight:900;font-size:clamp(2.2rem,7vw,3.4rem);text-transform:uppercase;line-height:1}
+.share p{color:var(--muted);margin:.6rem auto 1.4rem;max-width:30rem}
+.share .ctas{justify-content:center}
+
+footer{border-top:1px solid var(--line);padding:1.6rem 0 calc(1.6rem + env(safe-area-inset-bottom));text-align:center;color:var(--muted);font-size:.88rem}
+footer b{color:var(--text)}
+
+/* Visor */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.94);display:none;align-items:center;justify-content:center;padding:1rem}
+.lb.on{display:flex;animation:fade .25s}
+@keyframes fade{from{opacity:0}}
+.lb img{max-height:86vh;border-radius:12px}
+.lb button{position:absolute;top:max(1rem,env(safe-area-inset-top));right:1rem}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.toast{position:fixed;left:50%;bottom:calc(1.2rem + env(safe-area-inset-bottom));transform:translate(-50%,200px);visibility:hidden;background:var(--gold);color:#1a1305;font:700 .9rem Barlow;padding:.75rem 1.1rem;border-radius:12px;z-index:120;transition:transform .35s}
+.toast.on{transform:translate(-50%,0);visibility:visible}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.name .l{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="brand">Jerónimo <b>·</b> <span data-es="Portero" data-en="Goalkeeper">Portero</span></div>
+  <div class="top-actions">
+    <button class="chip" id="installBtn" hidden data-es="Instalar" data-en="Install">Instalar</button>
+    <button class="chip" id="langBtn" aria-label="Cambiar idioma / Change language">EN</button>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <video autoplay muted loop playsinline preload="auto" poster="img/poster-lenta-1.jpg" aria-hidden="true">
+    <source src="video/atajada-camara-lenta-1.mp4" type="video/mp4">
+  </video>
+  <div class="beams"><span></span><span></span></div>
+  <div class="wrap hero-in">
+    <div class="kicker" data-es="Batalla de Porteros 2026 · Caucasia" data-en="Goalkeeper Battle 2026 · Caucasia">Batalla de Porteros 2026 · Caucasia</div>
+    <h1 class="name" id="name" aria-label="Jerónimo">Jerónimo</h1>
+    <div class="title" data-es-html="Ganador de la <em>ronda clasificatoria</em>" data-en-html="Winner of the <em>qualifying round</em>">Ganador de la <em>ronda clasificatoria</em></div>
+    <p class="lead" data-es="Se tiró al piso, estiró los guantes y no dejó pasar el balón. Este es el recuerdo de su día en el arco, para verlo hoy y volverlo a ver cuando sea grande." data-en="He dove to the ground, stretched out his gloves and kept the ball out. This is the keepsake of his day in goal, to watch today and again when he grows up.">Se tiró al piso, estiró los guantes y no dejó pasar el balón. Este es el recuerdo de su día en el arco, para verlo hoy y volverlo a ver cuando sea grande.</p>
+    <div class="ctas">
+      <a class="btn btn-gold" href="#video" data-es="Ver el video" data-en="Watch the video">Ver el video</a>
+      <a class="btn btn-ghost" href="#mensajes" data-es="Dejarle un mensaje" data-en="Leave him a message">Dejarle un mensaje</a>
+    </div>
+  </div>
+</section>
+
+<div class="ticker" aria-hidden="true"><div id="tick"></div></div>
+
+<section id="ficha">
+  <div class="wrap">
+    <div class="sec-h reveal">
+      <h2><small data-es="La ficha" data-en="The card">La ficha</small><span data-es="Su día en el arco" data-en="His day in goal">Su día en el arco</span></h2>
+    </div>
+    <div class="stats">
+      <div class="stat win reveal"><div class="k" data-es="Resultado" data-en="Result">Resultado</div><div class="v" data-es="Ganador" data-en="Winner">Ganador</div></div>
+      <div class="stat reveal"><div class="k" data-es="Fase" data-en="Stage">Fase</div><div class="v" data-es="Ronda clasificatoria" data-en="Qualifying round">Ronda clasificatoria</div></div>
+      <div class="stat reveal"><div class="k" data-es="Torneo" data-en="Tournament">Torneo</div><div class="v" data-es="Batalla de Porteros 2026" data-en="Goalkeeper Battle 2026">Batalla de Porteros 2026</div></div>
+      <div class="stat reveal"><div class="k" data-es="Categoría" data-en="Category">Categoría</div><div class="v">2018 – 2019</div></div>
+      <div class="stat reveal"><div class="k" data-es="Organiza" data-en="Organizer">Organiza</div><div class="v" data-es="Academia de Porteros JuanP" data-en="JuanP Goalkeeper Academy">Academia de Porteros JuanP</div></div>
+      <div class="stat reveal"><div class="k" data-es="Lugar" data-en="Place">Lugar</div><div class="v">Caucasia, Antioquia</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="video" style="padding-top:1rem">
+  <div class="wrap">
+    <div class="sec-h reveal">
+      <h2><small data-es="El video" data-en="The video">El video</small><span data-es="Así lo vivimos" data-en="How we lived it">Así lo vivimos</span></h2>
+      <p data-es="Grabado desde la malla, con los vecinos y la familia mirando cada tiro." data-en="Filmed from behind the net, with neighbors and family watching every shot.">Grabado desde la malla, con los vecinos y la familia mirando cada tiro.</p>
+    </div>
+    <div class="player reveal">
+      <span class="badge" data-es="Video completo" data-en="Full video">Video completo</span>
+      <video controls playsinline preload="metadata" poster="img/poster-video.jpg">
+        <source src="video/jeronimo-ronda-clasificatoria.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="slow">
+      <div class="player reveal">
+        <span class="badge" data-es="Cámara lenta" data-en="Slow motion">Cámara lenta</span>
+        <video class="auto" muted loop playsinline preload="none" poster="img/poster-lenta-1.jpg"><source src="video/atajada-camara-lenta-1.mp4" type="video/mp4"></video>
+        <div class="cap" data-es-html="La estirada <span>· cuadro por cuadro</span>" data-en-html="The stretch <span>· frame by frame</span>">La estirada <span>· cuadro por cuadro</span></div>
+      </div>
+      <div class="player reveal">
+        <span class="badge" data-es="Cámara lenta" data-en="Slow motion">Cámara lenta</span>
+        <video class="auto" muted loop playsinline preload="none" poster="img/poster-lenta-2.jpg"><source src="video/atajada-camara-lenta-2.mp4" type="video/mp4"></video>
+        <div class="cap" data-es-html="Al piso por el balón <span>· sin miedo</span>" data-en-html="Down for the ball <span>· no fear</span>">Al piso por el balón <span>· sin miedo</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="atajadas">
+  <div class="wrap">
+    <div class="sec-h reveal">
+      <h2><small data-es="Las fotos" data-en="The photos">Las fotos</small><span data-es="Las atajadas" data-en="The saves">Las atajadas</span></h2>
+      <p data-es="Toca una foto para verla en grande." data-en="Tap a photo to see it full size.">Toca una foto para verla en grande.</p>
+    </div>
+    <div class="gal">
+      <figure class="reveal"><img src="img/atajada-14-2.jpg" alt="Jerónimo lanzándose por el balón" loading="lazy"><figcaption data-es-html="Ojos en el balón <span>· siempre</span>" data-en-html="Eyes on the ball <span>· always</span>">Ojos en el balón <span>· siempre</span></figcaption></figure>
+      <figure class="reveal"><img src="img/atajada-1-8.jpg" alt="Jerónimo estirado en el piso" loading="lazy"><figcaption data-es="Estirada completa" data-en="Full stretch">Estirada completa</figcaption></figure>
+      <figure class="reveal"><img src="img/atajada-19-3.jpg" alt="Jerónimo tapando un tiro" loading="lazy"><figcaption data-es="Arco cerrado" data-en="Goal shut">Arco cerrado</figcaption></figure>
+      <figure class="reveal"><img src="img/atajada-13-8.jpg" alt="Jerónimo cayendo al lado del balón" loading="lazy"><figcaption data-es="A ras de grama" data-en="Down at turf level">A ras de grama</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="cuadro">
+  <div class="wrap trophy">
+    <div class="frame reveal"><div class="frame-in" id="tilt"><img src="img/cuadro-batalla-de-porteros.jpg" alt="Cuadro de la Batalla de Porteros 2026 Caucasia, categoría 2018-2019"></div></div>
+    <div class="reveal">
+      <div class="kicker" data-es="El cuadro del torneo" data-en="The tournament plaque">El cuadro del torneo</div>
+      <div class="quote" style="margin-top:.8rem" data-es-html="El guante dorado <b>se gana</b> atajada por atajada" data-en-html="The golden glove <b>is earned</b> one save at a time">El guante dorado <b>se gana</b> atajada por atajada</div>
+      <p data-es="La Batalla de Porteros 2026 de la Academia de Porteros JuanP reunió en Caucasia a los arqueros más pequeños, por categorías. Jerónimo salió ganador de la ronda clasificatoria." data-en="The 2026 Goalkeeper Battle by JuanP Goalkeeper Academy brought together the youngest keepers in Caucasia, by age category. Jerónimo came out as winner of the qualifying round.">La Batalla de Porteros 2026 de la Academia de Porteros JuanP reunió en Caucasia a los arqueros más pequeños, por categorías. Jerónimo salió ganador de la ronda clasificatoria.</p>
+    </div>
+  </div>
+</section>
+
+<section id="carta" style="padding-top:1rem">
+  <div class="wrap">
+    <div class="letter reveal">
+      <div class="kicker" data-es="Para leer cuando seas grande" data-en="To read when you grow up">Para leer cuando seas grande</div>
+      <h3 style="margin-top:.7rem" data-es="Querido Jerónimo" data-en="Dear Jerónimo">Querido Jerónimo</h3>
+      <p data-es="Ese día no te importó caer al piso ni que el balón viniera fuerte. Te paraste en el arco, miraste al frente y te lanzaste sin pensarlo dos veces. Así se empieza: con valor, con ganas y con la familia y los vecinos gritando detrás de la malla." data-en="That day you didn't mind hitting the ground or how hard the ball came. You stood in goal, looked ahead and dove without thinking twice. That's how it starts: with courage, with heart, and with family and neighbors cheering behind the net.">Ese día no te importó caer al piso ni que el balón viniera fuerte. Te paraste en el arco, miraste al frente y te lanzaste sin pensarlo dos veces. Así se empieza: con valor, con ganas y con la familia y los vecinos gritando detrás de la malla.</p>
+      <p data-es="Que esta sea la primera de muchas. Sigue entrenando, sigue disfrutando y nunca dejes de tirarte por lo que quieres." data-en="May this be the first of many. Keep training, keep enjoying it, and never stop diving for what you want.">Que esta sea la primera de muchas. Sigue entrenando, sigue disfrutando y nunca dejes de tirarte por lo que quieres.</p>
+      <div class="sign" data-es="— Tu vecino Harold" data-en="— Your neighbor Harold">— Tu vecino Harold</div>
+    </div>
+  </div>
+</section>
+
+<section id="mensajes">
+  <div class="wrap">
+    <div class="sec-h reveal">
+      <h2><small data-es="Felicitaciones" data-en="Congratulations">Felicitaciones</small><span data-es="Déjale un mensaje" data-en="Leave him a message">Déjale un mensaje</span></h2>
+      <p data-es="Escribe tu felicitación y mándasela a la familia por WhatsApp. También queda guardada en este celular." data-en="Write your congratulations and send it to the family on WhatsApp. It also stays saved on this phone.">Escribe tu felicitación y mándasela a la familia por WhatsApp. También queda guardada en este celular.</p>
+    </div>
+    <form class="form reveal" id="form">
+      <input id="who" maxlength="40" required data-es-ph="Tu nombre" data-en-ph="Your name" placeholder="Tu nombre">
+      <textarea id="txt" maxlength="280" required data-es-ph="¡Bien hecho, Jerónimo! ..." data-en-ph="Well done, Jerónimo! ..." placeholder="¡Bien hecho, Jerónimo! ..."></textarea>
+      <div class="row">
+        <button class="btn btn-gold" type="submit" data-es="Guardar mensaje" data-en="Save message">Guardar mensaje</button>
+        <button class="btn btn-wa" type="button" id="sendWa" data-es="Enviar por WhatsApp" data-en="Send on WhatsApp">Enviar por WhatsApp</button>
+      </div>
+      <div class="note" data-es="Los mensajes se guardan solo en este dispositivo; no se publican en internet." data-en="Messages are saved only on this device; they are not published online.">Los mensajes se guardan solo en este dispositivo; no se publican en internet.</div>
+    </form>
+    <div class="wall" id="wall"></div>
+  </div>
+</section>
+
+<section class="share">
+  <div class="wrap">
+    <h2 class="reveal" data-es="Compártelo con la familia" data-en="Share it with the family">Compártelo con la familia</h2>
+    <p class="reveal" data-es="Mándale este recuerdo a los abuelos, tíos y a los compañeros de la academia." data-en="Send this keepsake to grandparents, uncles and aunts, and his academy teammates.">Mándale este recuerdo a los abuelos, tíos y a los compañeros de la academia.</p>
+    <div class="ctas reveal">
+      <button class="btn btn-wa" id="shareWa" data-es="Compartir por WhatsApp" data-en="Share on WhatsApp">Compartir por WhatsApp</button>
+      <button class="btn btn-ghost" id="shareNative" data-es="Más opciones" data-en="More options">Más opciones</button>
+      <button class="btn btn-ghost" id="copyLink" data-es="Copiar enlace" data-en="Copy link">Copiar enlace</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p data-es="Hecha con cariño para Jerónimo por su vecino." data-en="Made with love for Jerónimo by his neighbor.">Hecha con cariño para Jerónimo por su vecino.</p>
+    <p style="margin-top:.4rem"><b>Desarrollada por Vibras Positivas HM — Derechos de Autor Reservados</b> · <span id="yr">2026</span></p>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true"><button class="chip" id="lbClose" data-es="Cerrar" data-en="Close">Cerrar</button><img id="lbImg" alt=""></div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  const URL_APP = 'https://jeronimo-batalla-de-porteros.netlify.app/';
+  const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+  let lang = 'es';
+  try { lang = localStorage.getItem('jero-lang') || 'es'; } catch(e){}
+  if (lang !== 'en') lang = 'es';
+
+  const T = {
+    es:{tick:['Jerónimo','Ganador','Ronda clasificatoria','Batalla de Porteros 2026','Caucasia','Categoría 2018-2019','Academia de Porteros JuanP'],
+        share:'Mira el recuerdo de Jerónimo, ganador de la ronda clasificatoria de la Batalla de Porteros 2026 en Caucasia: ',
+        msgWa:(w,t)=>`Mensaje para Jerónimo, ganador de la ronda clasificatoria de la Batalla de Porteros 2026:\n\n"${t}"\n— ${w}\n\n${URL_APP}`,
+        saved:'Mensaje guardado',copied:'Enlace copiado',del:'Borrar',fill:'Escribe tu nombre y el mensaje'},
+    en:{tick:['Jerónimo','Winner','Qualifying round','Goalkeeper Battle 2026','Caucasia','Category 2018-2019','JuanP Goalkeeper Academy'],
+        share:'See the keepsake of Jerónimo, winner of the qualifying round at the 2026 Goalkeeper Battle in Caucasia: ',
+        msgWa:(w,t)=>`Message for Jerónimo, winner of the qualifying round at the 2026 Goalkeeper Battle:\n\n"${t}"\n— ${w}\n\n${URL_APP}`,
+        saved:'Message saved',copied:'Link copied',del:'Delete',fill:'Write your name and the message'}
+  };
+
+  function applyLang(){
+    document.documentElement.lang = lang;
+    $$('[data-es]').forEach(el => el.textContent = el.dataset[lang]);
+    $$('[data-es-html]').forEach(el => el.innerHTML = el.dataset[lang+'Html']);
+    $$('[data-es-ph]').forEach(el => el.placeholder = el.dataset[lang+'Ph']);
+    $('#langBtn').textContent = lang === 'es' ? 'EN' : 'ES';
+    const items = T[lang].tick.map((t,i)=>`<span class="${i%2?'':'g'}">${t}</span>`).join('');
+    $('#tick').innerHTML = items + items + items + items;
+    renderWall();
+  }
+  $('#langBtn').onclick = () => { lang = lang==='es'?'en':'es'; try{localStorage.setItem('jero-lang',lang)}catch(e){} applyLang(); };
+
+  // Nombre letra por letra
+  const nm = $('#name'); nm.innerHTML = [...'Jerónimo'].map((c,i)=>`<span class="l" style="animation-delay:${.15+i*.07}s">${c}</span>`).join('');
+
+  // Barra superior sólida al bajar
+  const top = $('#top');
+  addEventListener('scroll', () => top.classList.toggle('solid', scrollY > 60), {passive:true});
+
+  // Aparición al hacer scroll + videos en cámara lenta que arrancan solos
+  const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), {threshold:.12});
+  $$('.reveal').forEach(el => io.observe(el));
+  const vio = new IntersectionObserver(es => es.forEach(e => { const v=e.target; if(e.isIntersecting){ v.preload='auto'; v.play().catch(()=>{});} else v.pause(); }), {threshold:.35});
+  $$('video.auto').forEach(v => vio.observe(v));
+
+  // Cuadro que se inclina con el dedo o el mouse
+  const tilt = $('#tilt');
+  const move = (x,y) => { const r = tilt.getBoundingClientRect(); const px=(x-r.left)/r.width-.5, py=(y-r.top)/r.height-.5; tilt.style.transform=`rotateY(${px*18}deg) rotateX(${-py*14}deg) scale(1.02)`; };
+  tilt.addEventListener('pointermove', e => move(e.clientX,e.clientY));
+  tilt.addEventListener('pointerleave', () => tilt.style.transform='');
+
+  // Visor de fotos
+  const lb = $('#lb');
+  $$('.gal figure, .frame-in').forEach(f => f.addEventListener('click', () => { $('#lbImg').src = f.querySelector('img').src; $('#lbImg').alt = f.querySelector('img').alt; lb.classList.add('on'); }));
+  lb.addEventListener('click', e => { if(e.target!==$('#lbImg')) lb.classList.remove('on'); });
+
+  // Mensajes
+  const KEY='jero-mensajes';
+  const load = () => { try { return JSON.parse(localStorage.getItem(KEY)) || []; } catch(e){ return []; } };
+  const save = a => { try { localStorage.setItem(KEY, JSON.stringify(a)); } catch(e){} };
+  const esc = s => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  function renderWall(){
+    const a = load();
+    $('#wall').innerHTML = a.map((m,i)=>`<div class="msg"><button class="del" data-i="${i}">${T[lang].del}</button><p>${esc(m.t)}</p><div class="who">${esc(m.w)}</div></div>`).join('');
+    $$('#wall .del').forEach(b => b.onclick = () => { const a=load(); a.splice(+b.dataset.i,1); save(a); renderWall(); });
+  }
+  const getVals = () => ({w:$('#who').value.trim(), t:$('#txt').value.trim()});
+  $('#form').addEventListener('submit', e => {
+    e.preventDefault(); const v=getVals(); if(!v.w||!v.t) return toast(T[lang].fill);
+    const a=load(); a.unshift(v); save(a); renderWall(); $('#txt').value=''; toast(T[lang].saved);
+  });
+  $('#sendWa').onclick = () => { const v=getVals(); if(!v.w||!v.t) return toast(T[lang].fill);
+    const a=load(); a.unshift(v); save(a); renderWall();
+    open('https://wa.me/?text='+encodeURIComponent(T[lang].msgWa(v.w,v.t)),'_blank'); };
+
+  // Compartir
+  $('#shareWa').onclick = () => open('https://wa.me/?text='+encodeURIComponent(T[lang].share+URL_APP),'_blank');
+  $('#shareNative').onclick = async () => {
+    if (navigator.share) { try { await navigator.share({title:'Jerónimo · Batalla de Porteros 2026', text:T[lang].share, url:URL_APP}); } catch(e){} }
+    else copy();
+  };
+  const copy = async () => { try { await navigator.clipboard.writeText(URL_APP); toast(T[lang].copied); } catch(e){ prompt('', URL_APP); } };
+  $('#copyLink').onclick = copy;
+
+  function toast(m){ const t=$('#toast'); t.textContent=m; t.classList.add('on'); clearTimeout(toast.h); toast.h=setTimeout(()=>t.classList.remove('on'),2200); }
+
+  // Instalar como app
+  let deferred;
+  addEventListener('beforeinstallprompt', e => { e.preventDefault(); deferred=e; $('#installBtn').hidden=false; });
+  $('#installBtn').onclick = async () => { if(!deferred) return; deferred.prompt(); await deferred.userChoice; deferred=null; $('#installBtn').hidden=true; };
+  if ('serviceWorker' in navigator) addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(()=>{}));
+
+  $('#yr').textContent = new Intl.DateTimeFormat('es-CO',{year:'numeric',timeZone:'America/Bogota'}).format(new Date());
+  applyLang();
+})();
+</script>
+</body>
+</html>
