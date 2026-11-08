@@ -12,7 +12,8 @@ App recuerdo (PWA) de Jerónimo, ganador de la ronda clasificatoria de la Batall
 - Galería de atajadas con visor a pantalla completa
 - El cuadro del torneo con brillo e inclinación al tocarlo
 - Carta "para leer cuando seas grande"
-- Mensajes de felicitación (se guardan en el celular y se envían por WhatsApp)
+- Mensajes de felicitación (se guardan en el celular y se envían por WhatsApp a Luis, el papá de Jerónimo)
+- Botón para felicitar a Luis directamente por WhatsApp
 - Botones para compartir por WhatsApp, compartir y copiar enlace
 - Español / inglés
 - Instalable (manifest + service worker) y vista previa del enlace con foto real

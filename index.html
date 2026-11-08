@@ -296,14 +296,14 @@ footer b{color:var(--text)}
   <div class="wrap">
     <div class="sec-h reveal">
       <h2><small data-es="Felicitaciones" data-en="Congratulations">Felicitaciones</small><span data-es="Déjale un mensaje" data-en="Leave him a message">Déjale un mensaje</span></h2>
-      <p data-es="Escribe tu felicitación y mándasela a la familia por WhatsApp. También queda guardada en este celular." data-en="Write your congratulations and send it to the family on WhatsApp. It also stays saved on this phone.">Escribe tu felicitación y mándasela a la familia por WhatsApp. También queda guardada en este celular.</p>
+      <p data-es="Escribe tu felicitación y mándasela por WhatsApp a Luis, el papá de Jerónimo. También queda guardada en este celular." data-en="Write your congratulations and send it on WhatsApp to Luis, Jerónimo's dad. It also stays saved on this phone.">Escribe tu felicitación y mándasela por WhatsApp a Luis, el papá de Jerónimo. También queda guardada en este celular.</p>
     </div>
     <form class="form reveal" id="form">
       <input id="who" maxlength="40" required data-es-ph="Tu nombre" data-en-ph="Your name" placeholder="Tu nombre">
       <textarea id="txt" maxlength="280" required data-es-ph="¡Bien hecho, Jerónimo! ..." data-en-ph="Well done, Jerónimo! ..." placeholder="¡Bien hecho, Jerónimo! ..."></textarea>
       <div class="row">
         <button class="btn btn-gold" type="submit" data-es="Guardar mensaje" data-en="Save message">Guardar mensaje</button>
-        <button class="btn btn-wa" type="button" id="sendWa" data-es="Enviar por WhatsApp" data-en="Send on WhatsApp">Enviar por WhatsApp</button>
+        <button class="btn btn-wa" type="button" id="sendWa" data-es="Enviar a Luis por WhatsApp" data-en="Send to Luis on WhatsApp">Enviar a Luis por WhatsApp</button>
       </div>
       <div class="note" data-es="Los mensajes se guardan solo en este dispositivo; no se publican en internet." data-en="Messages are saved only on this device; they are not published online.">Los mensajes se guardan solo en este dispositivo; no se publican en internet.</div>
     </form>
@@ -316,7 +316,8 @@ footer b{color:var(--text)}
     <h2 class="reveal" data-es="Compártelo con la familia" data-en="Share it with the family">Compártelo con la familia</h2>
     <p class="reveal" data-es="Mándale este recuerdo a los abuelos, tíos y a los compañeros de la academia." data-en="Send this keepsake to grandparents, uncles and aunts, and his academy teammates.">Mándale este recuerdo a los abuelos, tíos y a los compañeros de la academia.</p>
     <div class="ctas reveal">
-      <button class="btn btn-wa" id="shareWa" data-es="Compartir por WhatsApp" data-en="Share on WhatsApp">Compartir por WhatsApp</button>
+      <button class="btn btn-wa" id="felicitarLuis" data-es="Felicitar a Luis, el papá" data-en="Congratulate Luis, his dad">Felicitar a Luis, el papá</button>
+      <button class="btn btn-ghost" id="shareWa" data-es="Compartir por WhatsApp" data-en="Share on WhatsApp">Compartir por WhatsApp</button>
       <button class="btn btn-ghost" id="shareNative" data-es="Más opciones" data-en="More options">Más opciones</button>
       <button class="btn btn-ghost" id="copyLink" data-es="Copiar enlace" data-en="Copy link">Copiar enlace</button>
     </div>
@@ -336,6 +337,8 @@ footer b{color:var(--text)}
 <script>
 (function(){
   const URL_APP = 'https://jeronimo-batalla-de-porteros.netlify.app/';
+  const WA_LUIS = '573146730865'; // Luis, papá de Jerónimo
+  const openWa = (num, text) => { const a = document.createElement('a'); a.href = 'https://wa.me/' + (num || '') + '?text=' + encodeURIComponent(text); a.target = '_blank'; a.rel = 'noopener'; document.body.appendChild(a); a.click(); a.remove(); };
   const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
   let lang = 'es';
   try { lang = localStorage.getItem('jero-lang') || 'es'; } catch(e){}
@@ -344,11 +347,13 @@ footer b{color:var(--text)}
   const T = {
     es:{tick:['Jerónimo','Ganador','Ronda clasificatoria','Batalla de Porteros 2026','Caucasia','Categoría 2018-2019','Academia de Porteros JuanP'],
         share:'Mira el recuerdo de Jerónimo, ganador de la ronda clasificatoria de la Batalla de Porteros 2026 en Caucasia: ',
-        msgWa:(w,t)=>`Mensaje para Jerónimo, ganador de la ronda clasificatoria de la Batalla de Porteros 2026:\n\n"${t}"\n— ${w}\n\n${URL_APP}`,
+        msgWa:(w,t)=>`Hola Luis, te mando este mensaje para Jerónimo, ganador de la ronda clasificatoria de la Batalla de Porteros 2026:\n\n"${t}"\n— ${w}\n\n${URL_APP}`,
+        hola:'Hola Luis, ¡felicitaciones por Jerónimo! Qué orgullo verlo ganar la ronda clasificatoria de la Batalla de Porteros 2026. Aquí está su recuerdo: '+URL_APP,
         saved:'Mensaje guardado',copied:'Enlace copiado',del:'Borrar',fill:'Escribe tu nombre y el mensaje'},
     en:{tick:['Jerónimo','Winner','Qualifying round','Goalkeeper Battle 2026','Caucasia','Category 2018-2019','JuanP Goalkeeper Academy'],
         share:'See the keepsake of Jerónimo, winner of the qualifying round at the 2026 Goalkeeper Battle in Caucasia: ',
-        msgWa:(w,t)=>`Message for Jerónimo, winner of the qualifying round at the 2026 Goalkeeper Battle:\n\n"${t}"\n— ${w}\n\n${URL_APP}`,
+        msgWa:(w,t)=>`Hi Luis, here is a message for Jerónimo, winner of the qualifying round at the 2026 Goalkeeper Battle:\n\n"${t}"\n— ${w}\n\n${URL_APP}`,
+        hola:'Hi Luis, congratulations on Jerónimo! So proud to see him win the qualifying round of the 2026 Goalkeeper Battle. Here is his keepsake: '+URL_APP,
         saved:'Message saved',copied:'Link copied',del:'Delete',fill:'Write your name and the message'}
   };
 
@@ -405,10 +410,11 @@ footer b{color:var(--text)}
   });
   $('#sendWa').onclick = () => { const v=getVals(); if(!v.w||!v.t) return toast(T[lang].fill);
     const a=load(); a.unshift(v); save(a); renderWall();
-    open('https://wa.me/?text='+encodeURIComponent(T[lang].msgWa(v.w,v.t)),'_blank'); };
+    openWa(WA_LUIS, T[lang].msgWa(v.w,v.t)); };
+  $('#felicitarLuis').onclick = () => openWa(WA_LUIS, T[lang].hola);
 
   // Compartir
-  $('#shareWa').onclick = () => open('https://wa.me/?text='+encodeURIComponent(T[lang].share+URL_APP),'_blank');
+  $('#shareWa').onclick = () => openWa('', T[lang].share+URL_APP);
   $('#shareNative').onclick = async () => {
     if (navigator.share) { try { await navigator.share({title:'Jerónimo · Batalla de Porteros 2026', text:T[lang].share, url:URL_APP}); } catch(e){} }
     else copy();
